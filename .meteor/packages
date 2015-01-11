@@ -8,3 +8,5 @@ meteor-platform
 autopublish
 insecure
 jhuenges:highstock
+coffeescript
+meteoric:ionic
