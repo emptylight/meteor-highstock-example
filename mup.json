@@ -6,7 +6,7 @@
       "username": "ubuntu",
       //"password": "password"
       // or pem file (ssh based authentication)
-      "pem": "/home/jk/Downloads/meteorTutorials/myFirstKeyPair.pem"
+      "pem": "/home/jk/github/meteor-highstock-example/myFirstKeyPair.pem"
     }
   ],
 
@@ -26,7 +26,7 @@
   "appName": "funds",
 
   // Location of app (local directory)
-  "app": "/home/jk/meteor_projects/meteor-highstock-example",
+  "app": "/home/jk/github/meteor-highstock-example",
 
   // Configure environment
   "env": {
