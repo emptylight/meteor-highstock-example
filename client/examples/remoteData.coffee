@@ -3,13 +3,14 @@
 #
 builtStockRemote = ->
   $.getJSON "http://www.highcharts.com/samples/data/jsonp.php?filename=aapl-c.json&callback=?", (data) ->
+    d2 = data
     $("#container-remote").highcharts "StockChart",
       rangeSelector:
         selected: 1
 
       title:
         text: "AAPL Stock Price"
-      
+
       series: [{
         name: "AAPL"
         data: data
@@ -18,7 +19,7 @@ builtStockRemote = ->
         },
         {
         name: "AAPL"
-        data: data
+        data: data #_.map d2, (d) -> d[4] = d[4] * 1.1
         tooltip:
           valueDecimals: 3
 
